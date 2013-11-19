@@ -1,9 +1,11 @@
 ZoatWorksApp::Application.routes.draw do
-  get "pages/home"
+  root :to => 'pages#home'
 
-  get "pages/contact"
-  
-  get "pages/about"
+  match '/contact', :to =>'pages#contact'
+  match '/about', :to =>'pages#about'
+  match '/help', :to =>'pages#help'
+
+  get "pages/home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

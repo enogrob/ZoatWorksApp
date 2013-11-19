@@ -9,4 +9,8 @@ module ApplicationHelper
     end
   end
 
+  def logo
+    image_tag("logo.png", :alt => "ZoatWorks Software LLC", :class => "round")
+  end
+
 end

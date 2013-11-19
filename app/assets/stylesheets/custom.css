@@ -19,6 +19,11 @@ section{
     background: #fff;
 }
 
+section h1 {
+    font-size: 200%;
+
+}
+
 /* links */
 a {
     color: #09c;
